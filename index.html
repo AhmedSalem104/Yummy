@@ -1,0 +1,310 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <title>Yummy</title>
+</head>
+
+<body>
+    <!--  window loading  -->
+    <div class="loading">
+        <div class="d-flex justify-content-center align-items-center w-100"> <span class="loader"></span></div>
+    </div>
+
+
+
+    <section class="super position-relative  ">
+        <div id="main" class="p-5 d-none  ">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-3  position-relative  rounded-3 ">
+                        <div class="text-center">
+                            <img src="img/logo.png" class="w-100 " alt="">
+                        </div>
+                        <div class="img-hover position-absolute w-100 h-100 rounded-3 ">
+                            <div class="w-100 h-100 d-flex flex-column-reverse justify-content-center px-2 ">
+                                <h2> Meal Name</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="slider-menu position-fixed d-flex ">
+            <div class="links h-100 d-flex justify-content-between flex-column p-4 ">
+                <div class="anchors ">
+                    <ul class="list-unstyled ">
+                        <div class="1">
+                            <li><a href="#" id="SearchLink">Search</a></li>
+                        </div>
+                        <div class="2">
+                            <li><a href="#" id="CategotiesLink">Categoties</a></li>
+                        </div>
+                        <div class="3">
+                            <li><a href="#" id="AreaLink">Area</a></li>
+                        </div>
+                        <div class="4">
+                            <li><a href="#" id="IngredientLink">Ingredients</a></li>
+                        </div>
+                        <div class="5">
+                            <li><a href="#" id="ContactUsLink">Contact Us</a></li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <ul class="list-unstyled d-flex">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-globe"></i></a></li>
+                    </ul>
+                    <h6 class="text-white">Copyright Â© 2019 All Rights Reserved.</h6>
+                </div>
+            </div>
+            <div class="close h-100 d-flex justify-content-between flex-column h-100 text-center">
+                <div class="icon-logo p-2">
+                    <img src="img/logo.png" class="w-100" alt="">
+                </div>
+                <div class="icon-close">
+                    <i class="fa-solid fa-bars fs-1"></i>
+                </div>
+                <div class="icon-share">
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fa-solid fa-share-nodes"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-globe"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="SuperSearch">
+        <section id="SearchSection" class="p-2 d-none">
+            <div class="container   py-4">
+                <div id="SearchContainer" class="searchInputs row justify-content-center  g-3 d-flex ">
+                    <div class="col-lg-5 col-md-4 col-sm-12">
+                        <input type="text" id="SearchByName" placeholder="Search By name">
+                    </div>
+                    <div class="col-lg-5 col-md-4 col-sm-12">
+                        <input type="text" id="SearchByFristLetter" maxlength="1" placeholder="Search By Frist Letter">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="SearchContent" class="">
+            <div class="p-2 ">
+                <div class="container ">
+                    <div class="row " id="SearchContentRow">
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="MealDetailsForSearch" class="d-none">
+            <div id="" class="p-2 ">
+                <div class="container">
+                    <div class="row text-white p-2 mt-4" id="MealDetailsRowForSearch">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </section>
+
+    <section id="SuperCategory">
+
+        <section id="Categories" class="d-none">
+            <div id="category-main" class="p-2 ">
+                <div class="container">
+                    <div class="row " id="category-main-row">
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="MealsForOneCategory" class="d-none">
+            <div id="" class="p-2 ">
+                <div class="container">
+                    <div class="row " id="MealsForOneCategoryRow">
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="MealDetails" class="d-none">
+            <div id="" class="p-2 ">
+                <div class="container">
+                    <div class="row text-white p-2 mt-4" id="MealDetailsRow">
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </section>
+
+    <section id="SuperArea">
+        <section id="AreaSection" class="d-none">
+            <div class="container">
+                <div class="row text-white" id="AreaRow">
+
+                </div>
+            </div>
+        </section>
+
+        <section id="MealsForOneArea" class="d-none">
+            <div id="" class="p-2 ">
+                <div class="container">
+                    <div class="row " id="MealsForOneAreaRow">
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="MealDetailsForArea" class="d-none">
+            <div id="" class="p-2 ">
+                <div class="container">
+                    <div class="row text-white p-2 mt-4" id="MealDetailsRowForArea">
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </section>
+
+    <section id="SuperIngredient">
+        <section id="IngredientSection" class="d-none">
+            <div class="container p-4 ">
+                <div class="row text-white p-2 " id="IngredientRow">
+
+                </div>
+            </div>
+        </section>
+
+        <section id="MealsForOneIngredient" class="d-none">
+            <div id="" class="p-2 ">
+                <div class="container">
+                    <div class="row " id="MealsForOneIngredientRow">
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="MealDetailsForIngredient" class="d-none">
+            <div id="" class="p-2 ">
+                <div class="container">
+                    <div class="row text-white p-2 mt-4" id="MealDetailsRowForIngredient">
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </section>
+
+    <section id="SuperContactUs">
+
+        <section id="contact-us" class="d-none">
+            <div class="container p-5">
+                <div id="form" class="form d-flex align-items-center h-100">
+                    <div class="row justify-content-center  g-3 d-flex ">
+                        <div class="col-lg-5 col-md-4 col-sm-12">
+                            <input type="text" class="form-control" id="NameInput" placeholder="Enter Your Name">
+                            <div id="NameAlert" class="alert alert-danger mt-1 d-none">
+                                <ul class="p-0 m-0 ps-3">
+                                    <li>Special characters and numbers not allowed</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-4 col-sm-12">
+                            <input type="text" class="form-control" id="EmailInput" placeholder="Enter Your Email">
+                            <div id="EmailAlert" class="alert alert-danger mt-1 d-none">
+                                <ul class="p-0 m-0 ps-3">
+                                    <li>Email not valid *exemple@yyy.zzz</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-4 col-sm-12">
+                            <input type="text" class="form-control" id="PhoneInput" placeholder="Enter Your Phone">
+                            <div id="PhoneAlert" class="alert alert-danger mt-1 d-none">
+                                <ul class="p-0 m-0 ps-3">
+                                    <li>Enter valid Phone Number</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-4 col-sm-12">
+                            <input type="text" class="form-control" id="ageInput" placeholder="Enter Your Age">
+                            <div id="ageAlert" class="alert alert-danger mt-1 d-none">
+                                <ul class="p-0 m-0 ps-3">
+                                    <li>Enter valid age</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-4 col-sm-12">
+                            <input type="text" class="form-control" id="passwordInput"
+                                placeholder="Enter Your Password">
+                            <div id="passwordAlert" class="alert alert-danger mt-1 d-none">
+                                <ul class="p-0 m-0 ps-3">
+                                    <li>Enter valid password *Minimum eight characters, at least one letter and one
+                                        number:*
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-4 col-sm-12">
+                            <input type="text" class="form-control" id="RepasswordInput" placeholder="Repassword">
+                            <div id="RepasswordAlert" class="alert alert-danger mt-1 d-none">
+                                <ul class="p-0 m-0 ps-3">
+                                    <li>Enter valid repassword</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="w-100 text-center">
+                            <button class="btn btn-outline-danger disabled" id="SubmitForm">Submit</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js" type="module"> </script>
+</body>
+
+</html>
