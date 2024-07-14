@@ -68,7 +68,6 @@ var SuperIngredient = document.getElementById("SuperIngredient")
 var SuperContactUs = document.getElementById("SuperContactUs")
 
 
-//    
 
 //    Search
 class Search {
@@ -215,28 +214,26 @@ class Search {
                 let result = await this.displayFullMealDetails(mealDetails)
 
             })
-
         })
         $(".loading").fadeOut(500)
     }
 }
 SearchLink.addEventListener("click", async function () {
     $(SearchSection).attr("class", "d-inline");
+    $(SuperSearch).attr("class", "d-inline");
+    
     $(SearchContent).attr("class", "d-none");
     $(SuperArea).attr("class", "d-none");
     $(SuperCategory).attr("class", "d-none");
     $(SuperIngredient).attr("class", "d-none");
     $(SuperContactUs).attr("class", "d-none");
 })
-
 let objSearch = new Search()
-
 $(SearchByName).keyup(async function (e) {
     let mealName = $(SearchByName).val()
     let response = await objSearch.getAllMealsForSearchByName(mealName)
     await objSearch.displayMeals(response)
 });
-
 $(SearchByFristLetter).keyup(async function (e) {
     let Letter = $(SearchByFristLetter).val()
     let response = await objSearch.getAllMealsForSearchByFristLetter(Letter)
@@ -888,6 +885,7 @@ function startApp() {
     })
 }
 startApp()
+
 $(".icon-close").click(function (e) {
     let sliderMenuWidth = $(".slider-menu").outerWidth(true);
     let sliderMenuleft = $(".slider-menu").css("left");
