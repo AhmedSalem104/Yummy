@@ -221,7 +221,9 @@ class Search {
 SearchLink.addEventListener("click", async function () {
     $(SearchSection).attr("class", "d-inline");
     $(SuperSearch).attr("class", "d-inline");
-    
+    $(MealDetailsForSearchId).attr("class", "d-none");
+    $(SearchContainer).attr("class", "d-inline searchInputs row justify-content-center  g-3 d-flex");
+
     $(SearchContent).attr("class", "d-none");
     $(SuperArea).attr("class", "d-none");
     $(SuperCategory).attr("class", "d-none");
@@ -637,6 +639,7 @@ class Area {
 AreaLink.addEventListener("click", async function () {
     $(SuperSearch).attr("class", "d-none");
     $(SuperArea).attr("class", "d-inline");
+
     $(SuperCategory).attr("class", "d-none");
     $(SuperIngredient).attr("class", "d-none");
     $(SuperContactUs).attr("class", "d-none");
