@@ -219,6 +219,7 @@ class Search {
     }
 }
 SearchLink.addEventListener("click", async function () {
+    startApp()
     $(SearchSection).attr("class", "d-inline");
     $(SuperSearch).attr("class", "d-inline");
     $(MealDetailsForSearchId).attr("class", "d-none");
@@ -438,6 +439,7 @@ class Category {
     }
 }
 CategotiesLink.addEventListener("click", async function () {
+    startApp()
     $(SuperSearch).attr("class", "d-none");
     $(SuperCategory).attr("class", "d-inline");
     $(SuperArea).attr("class", "d-none");
@@ -637,6 +639,7 @@ class Area {
     }
 }
 AreaLink.addEventListener("click", async function () {
+    startApp()
     $(SuperSearch).attr("class", "d-none");
     $(SuperArea).attr("class", "d-inline");
 
@@ -836,6 +839,7 @@ class Ingredient {
     }
 }
 IngredientLink.addEventListener("click", async function () {
+    startApp()
     $(SuperSearch).attr("class", "d-none");
     $(SuperArea).attr("class", "d-none");
     $(SuperCategory).attr("class", "d-none");
@@ -852,6 +856,7 @@ IngredientLink.addEventListener("click", async function () {
 
 //    ContactUs     
 ContactUsLink.addEventListener("click", async function () {
+    startApp()
     $(SuperSearch).attr("class", "d-none");
     $(SuperArea).attr("class", "d-none");
     $(SuperCategory).attr("class", "d-none");
